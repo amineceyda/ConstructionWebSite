@@ -566,6 +566,32 @@ section {
   color: var(--primary);
 }
 
+.about-detail .row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.about-detail .row .image {
+  flex: 1;
+  max-width: 100%;
+}
+.about-detail .row .image img {
+  width: 100%;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Remove extra space under the image */
+}
+.about-detail .row .content {
+  flex: 1;
+}
+.about-detail .row .content h3 {
+  font-size: 3.5rem;
+}
+.about-detail .row .content p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 1.5rem 2rem;

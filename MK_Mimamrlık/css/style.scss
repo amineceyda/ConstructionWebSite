@@ -630,13 +630,39 @@ section {
   }
 }
 
+//other page style
+.about-detail {
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 
+    .image {
+      flex: 1;
+      max-width: 100%;
 
+      img {
+        width: 100%;
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain the image's aspect ratio */
+        display: block; /* Remove extra space under the image */
+      }
+    }
 
+    .content {
+      flex: 1;
 
+      h3 {
+        font-size: 3.5rem;
+      }
 
-
-
+      p {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
 
 //media queries
 @media (max-width: 1200px) {
