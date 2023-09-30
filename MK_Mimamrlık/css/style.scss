@@ -551,24 +551,88 @@ section {
   }
 
   .swiper-pagination-bullet-active {
-    background-color: var(--black); // Change this to your desired color
+    background-color: var(--black); 
   }
 }
-
-.footer{
+.footer {
   text-align: center;
-  margin-bottom: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 10%;
+  background-color: var(--black);
+  margin-bottom: -20rem;
 
-  .credit{
-    @include titleText(2rem);
-    margin-top: 2rem;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .info-footer,
+    .share-footer,
+    .menu {
+      display: flex;
+      align-items: center;
+      color: var(--white);
+    }
+
+    .info-footer .info {
+      margin-right: 2rem; /* Add space between info elements */
+      display: flex;
+      align-items: center;
+      color: var(--white);
+    }
+
+    .info-footer i {
+      font-size: 2rem;
+      margin-right: 1rem; /* Adjust space between icons */
+      vertical-align: middle;
+    }
+
+    .info-footer p,
+    .menu a {
+      margin: 0;
+    }
+
+    .share-footer .fab:not(:last-child) {
+      margin-right: 1rem; /* Add space between share icons */
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: var(--white);
+      margin: 0 1.3rem; /* Add space between menu items */
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    .menu {
+      margin-top: 1rem; /* Add space between info and menu */
+      margin-left: 13rem; /* Reset left margin to keep menu on the left */
+      margin-right: auto; /* Push menu to the right */
+    }
+  }
+
+  .credit {
+    @include titleText(1rem);
+    color: var(--white);
+    margin-top: 1rem;
     padding-top: 1rem;
 
-    span{
-      color:var(--primary);
+    span {
+      color: var(--primary);
     }
   }
 }
+
+
+
+
 
 
 

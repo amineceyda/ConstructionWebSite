@@ -501,13 +501,65 @@ section {
 
 .footer {
   text-align: center;
-  margin-bottom: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 10%;
+  background-color: var(--black);
+  margin-bottom: -20rem;
+}
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer .row .info-footer,
+.footer .row .share-footer,
+.footer .row .menu {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+.footer .row .info-footer .info {
+  margin-right: 2rem; /* Add space between info elements */
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+.footer .row .info-footer i {
+  font-size: 2rem;
+  margin-right: 1rem; /* Adjust space between icons */
+  vertical-align: middle;
+}
+.footer .row .info-footer p,
+.footer .row .menu a {
+  margin: 0;
+}
+.footer .row .share-footer .fab:not(:last-child) {
+  margin-right: 1rem; /* Add space between share icons */
+}
+.footer .row .menu a {
+  text-decoration: none;
+  color: var(--white);
+  margin: 0 1.3rem; /* Add space between menu items */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+.footer .row .menu a:hover {
+  color: var(--primary);
+}
+.footer .row .menu {
+  margin-top: 1rem; /* Add space between info and menu */
+  margin-left: 13rem; /* Reset left margin to keep menu on the left */
+  margin-right: auto; /* Push menu to the right */
 }
 .footer .credit {
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--black);
   text-transform: capitalize;
-  margin-top: 2rem;
+  color: var(--white);
+  margin-top: 1rem;
   padding-top: 1rem;
 }
 .footer .credit span {
