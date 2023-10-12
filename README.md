@@ -1,5 +1,4 @@
-# PortfolioWebsite
-# Merve Kaplan Architecture Services
+# Construction Web Site
 
 This is a website template for a construction company. It has a clean and modern design, and is fully responsive. The template includes a number of features, such as a blog, a projects section, and a contact form. It is easy to customize and use. 
 
