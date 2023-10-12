@@ -55,7 +55,7 @@ This project is licensed under the MIT License.
 
 
 ​
-git clone https://github.com/username/repository.git
+git clone [https://github.com/amineceyda/ConstructionWebSite.git](https://github.com/amineceyda/ConstructionWebSite.git)
 ​
 
 
